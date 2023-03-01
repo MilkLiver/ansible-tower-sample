@@ -8,4 +8,4 @@
     register: exec_result
     
   - debug:
-      msg: "{{exec_result}}"
+      msg: "{{exec_result.stdout}}"
