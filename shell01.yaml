@@ -1,0 +1,11 @@
+---
+- name: Shell Test
+  hosts: all
+  tasks:
+  
+  - name: Check system information
+    shell: "{{ command }}"
+    register: exec_result
+    
+  - debug:
+      msg: "{{exec_result}}"
